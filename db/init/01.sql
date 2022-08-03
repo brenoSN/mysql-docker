@@ -32,3 +32,11 @@ CREATE TABLE IF NOT EXISTS user (
   UNIQUE (name),
   PRIMARY KEY (id)
 );
+
+CREATE TABLE IF NOT EXISTS regUserTasks(
+  taskId BIGINT NOT NULL,
+  userId INT NOT NULL,
+  FOREIGN KEY (taskId) REFERENCES task(id),
+  FOREIGN KEY (userId) REFERENCES user(id),
+  PRIMARY KEY (taskId, userId)
+);
