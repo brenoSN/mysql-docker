@@ -16,9 +16,9 @@ insert into task_status (id, status) values (5, 'PAUSED');
 CREATE TABLE IF NOT EXISTS task (
   id BIGINT NOT NULL,
   name VARCHAR(150) NOT NULL,
-  description VARCHAR(250),
+  description LONGTEXT NOT NULL,
   creationDate DATE NOT NULL,
-  lastEditDate DATE NOT NULL,
+  lastEditDate VARCHAR(30) NOT NULL,
   time INT(4) NOT NULL,
   status INT(2) NOT NULL,
   PRIMARY KEY (id),
