@@ -12,7 +12,7 @@ insert into task_status (id, status) values (2, 'WORKING');
 insert into task_status (id, status) values (3, 'FIXING');
 insert into task_status (id, status) values (4, 'DONE');
 insert into task_status (id, status) values (5, 'PAUSED');
-insert into task_status (id, status) values (5, 'PAID');
+insert into task_status (id, status) values (6, 'PAID');
 
 CREATE TABLE IF NOT EXISTS task (
   id BIGINT NOT NULL,
